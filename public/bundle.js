@@ -2097,11 +2097,6 @@ var App = function (_React$Component) {
       this.getVenues(query);
     }
   }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.getVenues('Pubs');
-    }
-  }, {
     key: 'getLocation',
     value: function getLocation(callback) {
       navigator.geolocation.getCurrentPosition(function (location) {
@@ -2143,8 +2138,7 @@ var App = function (_React$Component) {
 
       var venueList = this.state.venues.map(function (item, i) {
         return _react2.default.createElement(_Venue.Venue, { key: i, name: item.venue.name });
-      } //Create a new "name attribute"
-      );
+      });
 
       return _react2.default.createElement(
         'div',
@@ -4907,8 +4901,8 @@ var Search = function (_React$Component) {
       return _react2.default.createElement(
         'form',
         { onSubmit: this.handleSubmit },
-        _react2.default.createElement('input', { id: 'venueType', onChange: this.handleChange, value: this.state.value, placeholder: 'search for venues' }),
-        _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+        _react2.default.createElement('input', { className: 'inputText', id: 'venueType', onChange: this.handleChange, value: this.state.value, placeholder: 'I\'m looking for...' }),
+        _react2.default.createElement('input', { className: 'btn btn-primary btn-lg', type: 'submit', value: 'Search' })
       );
     }
   }]);

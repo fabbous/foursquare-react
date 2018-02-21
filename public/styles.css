@@ -1,0 +1,31 @@
+body {
+  font-family: "helvetica";
+}
+
+form {
+	padding-top: 110px;
+	padding-left: 600px;
+	font-size: 33px;
+}
+
+
+.btn, input[type=submit] {
+	margin-left: 20px;
+	margin-top: -5px;
+	background-color: #73CF42;
+	font-size: 22px;
+	border: none;
+}
+
+ul {
+	list-style-type: none;
+	font-size: 30px;
+	color: #4E595D;
+	padding-top: 40px;
+	padding-left: 600px;
+}
+
+
+ul li {
+    margin: 15px;
+}

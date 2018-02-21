@@ -20,9 +20,6 @@ class App extends React.Component {
     this.getVenues(query);
   }
 
-  componentDidMount() {
-    this.getVenues('Pubs');
-  }
 
   getLocation(callback) {
     navigator.geolocation.getCurrentPosition(function(location) {
@@ -60,7 +57,7 @@ class App extends React.Component {
   render() {
 
     var venueList = this.state.venues.map((item, i) =>
-      <Venue key={i} name={item.venue.name}/> //Create a new "name attribute"
+      <Venue key={i} name={item.venue.name}/> 
     );
 
   
